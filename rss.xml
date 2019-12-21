@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nocoder Blog]]></title><description><![CDATA[nocoder blog]]></description><link>http://nocoder.org</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Oct 2019 17:52:13 GMT</lastBuildDate><item><title><![CDATA[Ubuntu 18.04 安装 Redis Desktop Manager]]></title><description><![CDATA[下载 redis-desktop-manager0.8.3-120amd64.deb，链接: https://pan.baidu.com/s/1U_bFloEEV5ERtZ-Wv5yj8g 提取码: ufjp 执行进行安装； 如上所示，会提示缺少依赖，到 https://pkgs…]]></description><link>http://nocoder.org/install-redis-desktop-manager-on-ubuntu/</link><guid isPermaLink="false">http://nocoder.org/install-redis-desktop-manager-on-ubuntu/</guid><pubDate>Tue, 20 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nocoder Blog]]></title><description><![CDATA[nocoder blog]]></description><link>http://nocoder.org</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 21 Dec 2019 16:47:02 GMT</lastBuildDate><item><title><![CDATA[10进制计数法和2进制计数法]]></title><description><![CDATA[10进制计数法和2进制计数法 10进制计数法 平时我们使用的就是10进制计数法，使用的数字有10种，即  数位有一定的意义，从右往左分别表示个位、十位、百位、千位… 引用书中的例子，来分解 这个数 2 表示的是 1000 的个数 5 表示的是 100 的个数 0 表示的是 1…]]></description><link>http://nocoder.org/10-hex-and-binary/</link><guid isPermaLink="false">http://nocoder.org/10-hex-and-binary/</guid><pubDate>Sun, 22 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h3&gt;10进制计数法和2进制计数法&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;10进制计数法&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;平时我们使用的就是10进制计数法，使用的数字有10种，即 &lt;code class=&quot;language-text&quot;&gt;0、1、2、3、4、5、6、7、8、9&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;数位有一定的意义，从右往左分别表示个位、十位、百位、千位…&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;引用书中的例子，来分解&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;2503&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;这个数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 表示的是 1000 的个数&lt;/li&gt;
+&lt;li&gt;5 表示的是 100 的个数&lt;/li&gt;
+&lt;li&gt;0 表示的是 10 的个数&lt;/li&gt;
+&lt;li&gt;3 表示的是 1 的个数&lt;/li&gt;
+&lt;li&gt;2503 这个数字就是2个1000、5个100、0个10、3个1 累加的结果&lt;/li&gt;
+&lt;li&gt;1000 是 &lt;code class=&quot;language-text&quot;&gt;10*10*10&lt;/code&gt; 即10的3次方，100 是 &lt;code class=&quot;language-text&quot;&gt;10*10&lt;/code&gt; 即10 的2次方&lt;/li&gt;
+&lt;li&gt;2503 又可以表示为 &lt;code class=&quot;language-text&quot;&gt;2*10的3次方 + 5*10的2次方 + 0*10的1次方 + 3*10的0次方&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2进制计数法&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;计算机在处理数据时使用的是2进制计数法，使用的数字有2中，即 &lt;code class=&quot;language-text&quot;&gt;0、1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;数位的意义是，从右往左分别表示1位、2位、4位、8位、16位…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;10进制和2进制数的转换&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://raw.githubusercontent.com/yangjinlong86/arts/master/2019/images/0-99%E7%9A%8410%E8%BF%9B%E5%88%B6%E5%92%8C2%E8%BF%9B%E5%88%B6%E8%AE%A1%E6%95%B0.png&quot;&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yangjinlong86/arts/master/2019/images/0-99%E7%9A%8410%E8%BF%9B%E5%88%B6%E5%92%8C2%E8%BF%9B%E5%88%B6%E8%AE%A1%E6%95%B0.png&quot; alt=&quot;0到99的10进制和2进制计数&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;2 进制转换成 10 进制&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;直接举例子，把2进制 &lt;code class=&quot;language-text&quot;&gt;1010110&lt;/code&gt; 转换成10进制&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;由于2进制从右往左分别表示1位，2位，4位，8位，16位…&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;0&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;0&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;0&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;64&lt;/td&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;然后把所有的&lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;下面的对应的值加起来，即&lt;code class=&quot;language-text&quot;&gt;64+16+4+2=86&lt;/code&gt;&lt;/p&gt;
+&lt;h4&gt;10 进制转换成 2 进制&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;余数短除法&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;活用这个方法可以将所有十进制数字转换成任何进制表达。除数为2是因为我们最终想得到的以2为基数的数（即二进制数值） 。如果最终想得到其他数系的数字，用目标数系的基数代替这个方法里二进制的基数2 就可以了。例如，要得到基数为9的数，就用9来代替2作为除数 。最终的结果就是目标数系的数字表达。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;整个计算过程只需要将数字一直除以2&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;进行除法运算，纪录余数0或1&lt;/li&gt;
+&lt;li&gt;继续用商除以2，一直到商为0&lt;/li&gt;
+&lt;li&gt;写出2进制数字，从最后一个余数开始顺序读，读到最开始的余数&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Ubuntu 18.04 安装 Redis Desktop Manager]]></title><description><![CDATA[下载 redis-desktop-manager0.8.3-120amd64.deb，链接: https://pan.baidu.com/s/1U_bFloEEV5ERtZ-Wv5yj8g 提取码: ufjp 执行进行安装； 如上所示，会提示缺少依赖，到 https://pkgs…]]></description><link>http://nocoder.org/install-redis-desktop-manager-on-ubuntu/</link><guid isPermaLink="false">http://nocoder.org/install-redis-desktop-manager-on-ubuntu/</guid><pubDate>Tue, 20 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;下载 redis-desktop-manager&lt;em&gt;0.8.3-120&lt;/em&gt;amd64.deb，链接: &lt;a href=&quot;https://pan.baidu.com/s/1U_bFloEEV5ERtZ-Wv5yj8g&quot;&gt;https://pan.baidu.com/s/1U_bFloEEV5ERtZ-Wv5yj8g&lt;/a&gt; 提取码: ufjp&lt;/li&gt;
 &lt;li&gt;执行&lt;code class=&quot;language-text&quot;&gt;sudo dpkg -i redis-desktop-manager_0.8.3-120_amd64.deb&lt;/code&gt;进行安装；&lt;/li&gt;
 &lt;/ol&gt;
@@ -31,7 +98,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/86e661a44d8f26370cbd24cb709ec5c8/8ecd8/pkg-zlibc.png&quot;
+    href=&quot;/static/86e661a44d8f26370cbd24cb709ec5c8/0e5c6/pkg-zlibc.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -50,13 +117,13 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;pkg zlibc&quot;
         title=&quot;&quot;
-        src=&quot;/static/86e661a44d8f26370cbd24cb709ec5c8/b9e4f/pkg-zlibc.png&quot;
-        srcset=&quot;/static/86e661a44d8f26370cbd24cb709ec5c8/cf440/pkg-zlibc.png 148w,
-/static/86e661a44d8f26370cbd24cb709ec5c8/d2d38/pkg-zlibc.png 295w,
-/static/86e661a44d8f26370cbd24cb709ec5c8/b9e4f/pkg-zlibc.png 590w,
-/static/86e661a44d8f26370cbd24cb709ec5c8/f9b6a/pkg-zlibc.png 885w,
-/static/86e661a44d8f26370cbd24cb709ec5c8/2d849/pkg-zlibc.png 1180w,
-/static/86e661a44d8f26370cbd24cb709ec5c8/8ecd8/pkg-zlibc.png 1387w&quot;
+        src=&quot;/static/86e661a44d8f26370cbd24cb709ec5c8/799d3/pkg-zlibc.png&quot;
+        srcset=&quot;/static/86e661a44d8f26370cbd24cb709ec5c8/00d96/pkg-zlibc.png 148w,
+/static/86e661a44d8f26370cbd24cb709ec5c8/0b23c/pkg-zlibc.png 295w,
+/static/86e661a44d8f26370cbd24cb709ec5c8/799d3/pkg-zlibc.png 590w,
+/static/86e661a44d8f26370cbd24cb709ec5c8/2a3d6/pkg-zlibc.png 885w,
+/static/86e661a44d8f26370cbd24cb709ec5c8/ae92f/pkg-zlibc.png 1180w,
+/static/86e661a44d8f26370cbd24cb709ec5c8/0e5c6/pkg-zlibc.png 1387w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -67,7 +134,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/46e360ce70aba48dd24f7dbdd40b16f2/8d6e5/pkg-libpng.png&quot;
+    href=&quot;/static/46e360ce70aba48dd24f7dbdd40b16f2/2d422/pkg-libpng.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -86,13 +153,13 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;pkg libpng&quot;
         title=&quot;&quot;
-        src=&quot;/static/46e360ce70aba48dd24f7dbdd40b16f2/b9e4f/pkg-libpng.png&quot;
-        srcset=&quot;/static/46e360ce70aba48dd24f7dbdd40b16f2/cf440/pkg-libpng.png 148w,
-/static/46e360ce70aba48dd24f7dbdd40b16f2/d2d38/pkg-libpng.png 295w,
-/static/46e360ce70aba48dd24f7dbdd40b16f2/b9e4f/pkg-libpng.png 590w,
-/static/46e360ce70aba48dd24f7dbdd40b16f2/f9b6a/pkg-libpng.png 885w,
-/static/46e360ce70aba48dd24f7dbdd40b16f2/2d849/pkg-libpng.png 1180w,
-/static/46e360ce70aba48dd24f7dbdd40b16f2/8d6e5/pkg-libpng.png 1290w&quot;
+        src=&quot;/static/46e360ce70aba48dd24f7dbdd40b16f2/799d3/pkg-libpng.png&quot;
+        srcset=&quot;/static/46e360ce70aba48dd24f7dbdd40b16f2/00d96/pkg-libpng.png 148w,
+/static/46e360ce70aba48dd24f7dbdd40b16f2/0b23c/pkg-libpng.png 295w,
+/static/46e360ce70aba48dd24f7dbdd40b16f2/799d3/pkg-libpng.png 590w,
+/static/46e360ce70aba48dd24f7dbdd40b16f2/2a3d6/pkg-libpng.png 885w,
+/static/46e360ce70aba48dd24f7dbdd40b16f2/ae92f/pkg-libpng.png 1180w,
+/static/46e360ce70aba48dd24f7dbdd40b16f2/2d422/pkg-libpng.png 1290w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -103,7 +170,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ad9190ddb9f9512a4ea705dde0a89315/47b7a/pkg-libicu52.png&quot;
+    href=&quot;/static/ad9190ddb9f9512a4ea705dde0a89315/a7e9f/pkg-libicu52.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -122,13 +189,13 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;pkg libicu52&quot;
         title=&quot;&quot;
-        src=&quot;/static/ad9190ddb9f9512a4ea705dde0a89315/b9e4f/pkg-libicu52.png&quot;
-        srcset=&quot;/static/ad9190ddb9f9512a4ea705dde0a89315/cf440/pkg-libicu52.png 148w,
-/static/ad9190ddb9f9512a4ea705dde0a89315/d2d38/pkg-libicu52.png 295w,
-/static/ad9190ddb9f9512a4ea705dde0a89315/b9e4f/pkg-libicu52.png 590w,
-/static/ad9190ddb9f9512a4ea705dde0a89315/f9b6a/pkg-libicu52.png 885w,
-/static/ad9190ddb9f9512a4ea705dde0a89315/2d849/pkg-libicu52.png 1180w,
-/static/ad9190ddb9f9512a4ea705dde0a89315/47b7a/pkg-libicu52.png 1283w&quot;
+        src=&quot;/static/ad9190ddb9f9512a4ea705dde0a89315/799d3/pkg-libicu52.png&quot;
+        srcset=&quot;/static/ad9190ddb9f9512a4ea705dde0a89315/00d96/pkg-libicu52.png 148w,
+/static/ad9190ddb9f9512a4ea705dde0a89315/0b23c/pkg-libicu52.png 295w,
+/static/ad9190ddb9f9512a4ea705dde0a89315/799d3/pkg-libicu52.png 590w,
+/static/ad9190ddb9f9512a4ea705dde0a89315/2a3d6/pkg-libicu52.png 885w,
+/static/ad9190ddb9f9512a4ea705dde0a89315/ae92f/pkg-libicu52.png 1180w,
+/static/ad9190ddb9f9512a4ea705dde0a89315/a7e9f/pkg-libicu52.png 1283w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -174,7 +241,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1cf2b8c61ed2dc1ba58c1356bf90d313/75da9/basic-graph.png&quot;
+    href=&quot;/static/1cf2b8c61ed2dc1ba58c1356bf90d313/51887/basic-graph.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -193,9 +260,9 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;basic-graph&quot;
         title=&quot;&quot;
-        src=&quot;/static/1cf2b8c61ed2dc1ba58c1356bf90d313/75da9/basic-graph.png&quot;
-        srcset=&quot;/static/1cf2b8c61ed2dc1ba58c1356bf90d313/cf440/basic-graph.png 148w,
-/static/1cf2b8c61ed2dc1ba58c1356bf90d313/75da9/basic-graph.png 211w&quot;
+        src=&quot;/static/1cf2b8c61ed2dc1ba58c1356bf90d313/51887/basic-graph.png&quot;
+        srcset=&quot;/static/1cf2b8c61ed2dc1ba58c1356bf90d313/00d96/basic-graph.png 148w,
+/static/1cf2b8c61ed2dc1ba58c1356bf90d313/51887/basic-graph.png 211w&quot;
         sizes=&quot;(max-width: 211px) 100vw, 211px&quot;
       /&gt;
     &lt;/span&gt;
@@ -211,7 +278,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/30ce7b6e1b8ab60b91d9af4b89a64b73/1bae2/directed-graph.png&quot;
+    href=&quot;/static/30ce7b6e1b8ab60b91d9af4b89a64b73/d6f3f/directed-graph.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -230,10 +297,10 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;directed-graph&quot;
         title=&quot;&quot;
-        src=&quot;/static/30ce7b6e1b8ab60b91d9af4b89a64b73/1bae2/directed-graph.png&quot;
-        srcset=&quot;/static/30ce7b6e1b8ab60b91d9af4b89a64b73/cf440/directed-graph.png 148w,
-/static/30ce7b6e1b8ab60b91d9af4b89a64b73/d2d38/directed-graph.png 295w,
-/static/30ce7b6e1b8ab60b91d9af4b89a64b73/1bae2/directed-graph.png 350w&quot;
+        src=&quot;/static/30ce7b6e1b8ab60b91d9af4b89a64b73/d6f3f/directed-graph.png&quot;
+        srcset=&quot;/static/30ce7b6e1b8ab60b91d9af4b89a64b73/00d96/directed-graph.png 148w,
+/static/30ce7b6e1b8ab60b91d9af4b89a64b73/0b23c/directed-graph.png 295w,
+/static/30ce7b6e1b8ab60b91d9af4b89a64b73/d6f3f/directed-graph.png 350w&quot;
         sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
       /&gt;
     &lt;/span&gt;
@@ -246,7 +313,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b38eaa7294e8910d79dad2f0aa36cb83/1bae2/undirected-graph.png&quot;
+    href=&quot;/static/b38eaa7294e8910d79dad2f0aa36cb83/d6f3f/undirected-graph.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -265,10 +332,10 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;undirected-graph&quot;
         title=&quot;&quot;
-        src=&quot;/static/b38eaa7294e8910d79dad2f0aa36cb83/1bae2/undirected-graph.png&quot;
-        srcset=&quot;/static/b38eaa7294e8910d79dad2f0aa36cb83/cf440/undirected-graph.png 148w,
-/static/b38eaa7294e8910d79dad2f0aa36cb83/d2d38/undirected-graph.png 295w,
-/static/b38eaa7294e8910d79dad2f0aa36cb83/1bae2/undirected-graph.png 350w&quot;
+        src=&quot;/static/b38eaa7294e8910d79dad2f0aa36cb83/d6f3f/undirected-graph.png&quot;
+        srcset=&quot;/static/b38eaa7294e8910d79dad2f0aa36cb83/00d96/undirected-graph.png 148w,
+/static/b38eaa7294e8910d79dad2f0aa36cb83/0b23c/undirected-graph.png 295w,
+/static/b38eaa7294e8910d79dad2f0aa36cb83/d6f3f/undirected-graph.png 350w&quot;
         sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
       /&gt;
     &lt;/span&gt;
@@ -281,7 +348,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/411106b47c31c15f35e391d2db79c0a4/1bae2/directed-weighted-graph.png&quot;
+    href=&quot;/static/411106b47c31c15f35e391d2db79c0a4/d6f3f/directed-weighted-graph.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -300,10 +367,10 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;directed-wieghted-graph&quot;
         title=&quot;&quot;
-        src=&quot;/static/411106b47c31c15f35e391d2db79c0a4/1bae2/directed-weighted-graph.png&quot;
-        srcset=&quot;/static/411106b47c31c15f35e391d2db79c0a4/cf440/directed-weighted-graph.png 148w,
-/static/411106b47c31c15f35e391d2db79c0a4/d2d38/directed-weighted-graph.png 295w,
-/static/411106b47c31c15f35e391d2db79c0a4/1bae2/directed-weighted-graph.png 350w&quot;
+        src=&quot;/static/411106b47c31c15f35e391d2db79c0a4/d6f3f/directed-weighted-graph.png&quot;
+        srcset=&quot;/static/411106b47c31c15f35e391d2db79c0a4/00d96/directed-weighted-graph.png 148w,
+/static/411106b47c31c15f35e391d2db79c0a4/0b23c/directed-weighted-graph.png 295w,
+/static/411106b47c31c15f35e391d2db79c0a4/d6f3f/directed-weighted-graph.png 350w&quot;
         sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
       /&gt;
     &lt;/span&gt;
@@ -525,7 +592,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/a82ee/aop-1.png&quot;
+    href=&quot;/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/9dd9c/aop-1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -544,11 +611,11 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;aop-demo&quot;
         title=&quot;&quot;
-        src=&quot;/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/b9e4f/aop-1.png&quot;
-        srcset=&quot;/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/cf440/aop-1.png 148w,
-/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/d2d38/aop-1.png 295w,
-/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/b9e4f/aop-1.png 590w,
-/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/a82ee/aop-1.png 696w&quot;
+        src=&quot;/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/799d3/aop-1.png&quot;
+        srcset=&quot;/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/00d96/aop-1.png 148w,
+/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/0b23c/aop-1.png 295w,
+/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/799d3/aop-1.png 590w,
+/static/2f4e0193d1fbcc4a0d5c4c4981af66fe/9dd9c/aop-1.png 696w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -561,7 +628,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5030ef0a87877df7e90d9832847a7dce/af83c/aop-2.png&quot;
+    href=&quot;/static/5030ef0a87877df7e90d9832847a7dce/c569d/aop-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -580,10 +647,10 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;aop-demo&quot;
         title=&quot;&quot;
-        src=&quot;/static/5030ef0a87877df7e90d9832847a7dce/af83c/aop-2.png&quot;
-        srcset=&quot;/static/5030ef0a87877df7e90d9832847a7dce/cf440/aop-2.png 148w,
-/static/5030ef0a87877df7e90d9832847a7dce/d2d38/aop-2.png 295w,
-/static/5030ef0a87877df7e90d9832847a7dce/af83c/aop-2.png 552w&quot;
+        src=&quot;/static/5030ef0a87877df7e90d9832847a7dce/c569d/aop-2.png&quot;
+        srcset=&quot;/static/5030ef0a87877df7e90d9832847a7dce/00d96/aop-2.png 148w,
+/static/5030ef0a87877df7e90d9832847a7dce/0b23c/aop-2.png 295w,
+/static/5030ef0a87877df7e90d9832847a7dce/c569d/aop-2.png 552w&quot;
         sizes=&quot;(max-width: 552px) 100vw, 552px&quot;
       /&gt;
     &lt;/span&gt;
@@ -669,7 +736,7 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/41018c766a2b8eadd4241117d2b44252/841f8/aop-3.png&quot;
+    href=&quot;/static/41018c766a2b8eadd4241117d2b44252/51e5c/aop-3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -688,10 +755,10 @@ dpkg: 处理软件包 redis-desktop-manager &lt;span class=&quot;token punctuati
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;aop-demo&quot;
         title=&quot;&quot;
-        src=&quot;/static/41018c766a2b8eadd4241117d2b44252/841f8/aop-3.png&quot;
-        srcset=&quot;/static/41018c766a2b8eadd4241117d2b44252/cf440/aop-3.png 148w,
-/static/41018c766a2b8eadd4241117d2b44252/d2d38/aop-3.png 295w,
-/static/41018c766a2b8eadd4241117d2b44252/841f8/aop-3.png 533w&quot;
+        src=&quot;/static/41018c766a2b8eadd4241117d2b44252/51e5c/aop-3.png&quot;
+        srcset=&quot;/static/41018c766a2b8eadd4241117d2b44252/00d96/aop-3.png 148w,
+/static/41018c766a2b8eadd4241117d2b44252/0b23c/aop-3.png 295w,
+/static/41018c766a2b8eadd4241117d2b44252/51e5c/aop-3.png 533w&quot;
         sizes=&quot;(max-width: 533px) 100vw, 533px&quot;
       /&gt;
     &lt;/span&gt;
@@ -988,7 +1055,7 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4f0838d7d2f183bec5f1a7c408ab279b/ba6f7/aspect-execution.png&quot;
+    href=&quot;/static/4f0838d7d2f183bec5f1a7c408ab279b/d884c/aspect-execution.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1007,11 +1074,11 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;aspect-execution&quot;
         title=&quot;&quot;
-        src=&quot;/static/4f0838d7d2f183bec5f1a7c408ab279b/b9e4f/aspect-execution.png&quot;
-        srcset=&quot;/static/4f0838d7d2f183bec5f1a7c408ab279b/cf440/aspect-execution.png 148w,
-/static/4f0838d7d2f183bec5f1a7c408ab279b/d2d38/aspect-execution.png 295w,
-/static/4f0838d7d2f183bec5f1a7c408ab279b/b9e4f/aspect-execution.png 590w,
-/static/4f0838d7d2f183bec5f1a7c408ab279b/ba6f7/aspect-execution.png 852w&quot;
+        src=&quot;/static/4f0838d7d2f183bec5f1a7c408ab279b/799d3/aspect-execution.png&quot;
+        srcset=&quot;/static/4f0838d7d2f183bec5f1a7c408ab279b/00d96/aspect-execution.png 148w,
+/static/4f0838d7d2f183bec5f1a7c408ab279b/0b23c/aspect-execution.png 295w,
+/static/4f0838d7d2f183bec5f1a7c408ab279b/799d3/aspect-execution.png 590w,
+/static/4f0838d7d2f183bec5f1a7c408ab279b/d884c/aspect-execution.png 852w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1022,7 +1089,7 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/02e39b25fa3ea3ba8a8ab4b275b90103/89b07/aspect-annotation.png&quot;
+    href=&quot;/static/02e39b25fa3ea3ba8a8ab4b275b90103/b4a26/aspect-annotation.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1041,12 +1108,12 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;aspect-annotation&quot;
         title=&quot;&quot;
-        src=&quot;/static/02e39b25fa3ea3ba8a8ab4b275b90103/b9e4f/aspect-annotation.png&quot;
-        srcset=&quot;/static/02e39b25fa3ea3ba8a8ab4b275b90103/cf440/aspect-annotation.png 148w,
-/static/02e39b25fa3ea3ba8a8ab4b275b90103/d2d38/aspect-annotation.png 295w,
-/static/02e39b25fa3ea3ba8a8ab4b275b90103/b9e4f/aspect-annotation.png 590w,
-/static/02e39b25fa3ea3ba8a8ab4b275b90103/f9b6a/aspect-annotation.png 885w,
-/static/02e39b25fa3ea3ba8a8ab4b275b90103/89b07/aspect-annotation.png 1020w&quot;
+        src=&quot;/static/02e39b25fa3ea3ba8a8ab4b275b90103/799d3/aspect-annotation.png&quot;
+        srcset=&quot;/static/02e39b25fa3ea3ba8a8ab4b275b90103/00d96/aspect-annotation.png 148w,
+/static/02e39b25fa3ea3ba8a8ab4b275b90103/0b23c/aspect-annotation.png 295w,
+/static/02e39b25fa3ea3ba8a8ab4b275b90103/799d3/aspect-annotation.png 590w,
+/static/02e39b25fa3ea3ba8a8ab4b275b90103/2a3d6/aspect-annotation.png 885w,
+/static/02e39b25fa3ea3ba8a8ab4b275b90103/b4a26/aspect-annotation.png 1020w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1090,7 +1157,7 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0a99c320af39d8816b005834866a351d/37b61/pointcut.png&quot;
+    href=&quot;/static/0a99c320af39d8816b005834866a351d/d98a5/pointcut.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1109,12 +1176,12 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;pointcut&quot;
         title=&quot;&quot;
-        src=&quot;/static/0a99c320af39d8816b005834866a351d/b9e4f/pointcut.png&quot;
-        srcset=&quot;/static/0a99c320af39d8816b005834866a351d/cf440/pointcut.png 148w,
-/static/0a99c320af39d8816b005834866a351d/d2d38/pointcut.png 295w,
-/static/0a99c320af39d8816b005834866a351d/b9e4f/pointcut.png 590w,
-/static/0a99c320af39d8816b005834866a351d/f9b6a/pointcut.png 885w,
-/static/0a99c320af39d8816b005834866a351d/37b61/pointcut.png 1012w&quot;
+        src=&quot;/static/0a99c320af39d8816b005834866a351d/799d3/pointcut.png&quot;
+        srcset=&quot;/static/0a99c320af39d8816b005834866a351d/00d96/pointcut.png 148w,
+/static/0a99c320af39d8816b005834866a351d/0b23c/pointcut.png 295w,
+/static/0a99c320af39d8816b005834866a351d/799d3/pointcut.png 590w,
+/static/0a99c320af39d8816b005834866a351d/2a3d6/pointcut.png 885w,
+/static/0a99c320af39d8816b005834866a351d/d98a5/pointcut.png 1012w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1138,7 +1205,7 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bdc0657875cd67678ffd44015b81d107/4bc72/spring-in-action.png&quot;
+    href=&quot;/static/bdc0657875cd67678ffd44015b81d107/60ba3/spring-in-action.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1157,11 +1224,11 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;spring-in-action&quot;
         title=&quot;&quot;
-        src=&quot;/static/bdc0657875cd67678ffd44015b81d107/b9e4f/spring-in-action.png&quot;
-        srcset=&quot;/static/bdc0657875cd67678ffd44015b81d107/cf440/spring-in-action.png 148w,
-/static/bdc0657875cd67678ffd44015b81d107/d2d38/spring-in-action.png 295w,
-/static/bdc0657875cd67678ffd44015b81d107/b9e4f/spring-in-action.png 590w,
-/static/bdc0657875cd67678ffd44015b81d107/4bc72/spring-in-action.png 641w&quot;
+        src=&quot;/static/bdc0657875cd67678ffd44015b81d107/799d3/spring-in-action.png&quot;
+        srcset=&quot;/static/bdc0657875cd67678ffd44015b81d107/00d96/spring-in-action.png 148w,
+/static/bdc0657875cd67678ffd44015b81d107/0b23c/spring-in-action.png 295w,
+/static/bdc0657875cd67678ffd44015b81d107/799d3/spring-in-action.png 590w,
+/static/bdc0657875cd67678ffd44015b81d107/60ba3/spring-in-action.png 641w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1175,7 +1242,7 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ef40ceb3747e4ddb28236fe0e1cd7a75/e79ec/head-first-design-pattern.png&quot;
+    href=&quot;/static/ef40ceb3747e4ddb28236fe0e1cd7a75/57a01/head-first-design-pattern.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1194,10 +1261,10 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;head-first-dp&quot;
         title=&quot;&quot;
-        src=&quot;/static/ef40ceb3747e4ddb28236fe0e1cd7a75/e79ec/head-first-design-pattern.png&quot;
-        srcset=&quot;/static/ef40ceb3747e4ddb28236fe0e1cd7a75/cf440/head-first-design-pattern.png 148w,
-/static/ef40ceb3747e4ddb28236fe0e1cd7a75/d2d38/head-first-design-pattern.png 295w,
-/static/ef40ceb3747e4ddb28236fe0e1cd7a75/e79ec/head-first-design-pattern.png 578w&quot;
+        src=&quot;/static/ef40ceb3747e4ddb28236fe0e1cd7a75/57a01/head-first-design-pattern.png&quot;
+        srcset=&quot;/static/ef40ceb3747e4ddb28236fe0e1cd7a75/00d96/head-first-design-pattern.png 148w,
+/static/ef40ceb3747e4ddb28236fe0e1cd7a75/0b23c/head-first-design-pattern.png 295w,
+/static/ef40ceb3747e4ddb28236fe0e1cd7a75/57a01/head-first-design-pattern.png 578w&quot;
         sizes=&quot;(max-width: 578px) 100vw, 578px&quot;
       /&gt;
     &lt;/span&gt;
@@ -1286,13 +1353,13 @@ Process finished with &lt;span class=&quot;token builtin class-name&quot;&gt;exi
 &lt;li&gt;
 &lt;p&gt;JSON&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
-		&amp;quot;@timestamp&amp;quot;: &amp;quot;2017-07025 17:02:12&amp;quot;,
-		&amp;quot;level&amp;quot;: &amp;quot;error&amp;quot;,
-		&amp;quot;message&amp;quot;: &amp;quot;connection refused&amp;quot;,
-		&amp;quot;service&amp;quot;: &amp;quot;listener&amp;quot;,
-		&amp;quot;thread&amp;quot;: &amp;quot;125&amp;quot;,
-		&amp;quot;customerid&amp;quot;: &amp;quot;776622&amp;quot;,
-		&amp;quot;ip&amp;quot;: &amp;quot;34.124.233.12&amp;quot;,
+		&amp;quot;@timestamp&amp;quot;: &amp;quot;2017-07025 17:02:12&amp;quot;undefined
+		&amp;quot;level&amp;quot;: &amp;quot;error&amp;quot;undefined
+		&amp;quot;message&amp;quot;: &amp;quot;connection refused&amp;quot;undefined
+		&amp;quot;service&amp;quot;: &amp;quot;listener&amp;quot;undefined
+		&amp;quot;thread&amp;quot;: &amp;quot;125&amp;quot;undefined
+		&amp;quot;customerid&amp;quot;: &amp;quot;776622&amp;quot;undefined
+		&amp;quot;ip&amp;quot;: &amp;quot;34.124.233.12&amp;quot;undefined
 		&amp;quot;queryid&amp;quot;: &amp;quot;45&amp;quot;
 	}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
@@ -1351,7 +1418,7 @@ queryid=45&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;使用占位符而不是字符串连接&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;logger.debug(&amp;quot;Entry number: &amp;quot; + i + &amp;quot; is &amp;quot; +  String.valueOf(entry[i])); 
-logger.debug(&amp;quot;Entry number: {} is {}&amp;quot;, i, entry[i]);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+logger.debug(&amp;quot;Entry number: {} is {}&amp;quot;undefined iundefined entry[i]);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;上面两个语句输出的效果是一样的，但是性能却相差两个数量级，在关闭DEBUG日志时，它们的开销就不一样了，主要的影响在于字符串转换和字符串拼接上，无论是否生效，前者都会将变量转换为字符串并进行拼接，而后者则只会在需要时执行这些操作。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1457,9 +1524,9 @@ logger.debug(&amp;quot;Entry number: {} is {}&amp;quot;, i, entry[i]);&lt;/code&
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; ``tar` `-xzf kafka_2.11-2.0.0.tgz``&amp;gt; ``cd` `kafka_2.11-2.0.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;&lt;a href=&quot;https://kafka.apache.org/quickstart#quickstart_startserver&quot;&gt;Step 2: Start the server&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Kafka uses &lt;a href=&quot;https://zookeeper.apache.org/&quot;&gt;ZooKeeper&lt;/a&gt; so you need to first start a ZooKeeper server if you don’t already have one. You can use the convenience script packaged with kafka to get a quick-and-dirty single-node ZooKeeper instance.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/zookeeper-server-start``.sh config``/zookeeper``.properties``[2013-04-22 15:01:37,495] INFO Reading configuration from: config``/zookeeper``.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)``...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/zookeeper-server-start``.sh config``/zookeeper``.properties``[2013-04-22 15:01:37undefined495] INFO Reading configuration from: config``/zookeeper``.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)``...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now start the Kafka server:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-server-start``.sh config``/server``.properties``[2013-04-22 15:01:47,028] INFO Verifying properties (kafka.utils.VerifiableProperties)``[2013-04-22 15:01:47,051] INFO Property socket.send.buffer.bytes is overridden to 1048576 (kafka.utils.VerifiableProperties)``...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-server-start``.sh config``/server``.properties``[2013-04-22 15:01:47undefined028] INFO Verifying properties (kafka.utils.VerifiableProperties)``[2013-04-22 15:01:47undefined051] INFO Property socket.send.buffer.bytes is overridden to 1048576 (kafka.utils.VerifiableProperties)``...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;&lt;a href=&quot;https://kafka.apache.org/quickstart#quickstart_createtopic&quot;&gt;Step 3: Create a topic&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Let’s create a topic named “test” with a single partition and only one replica:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-topics``.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic ``test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -1487,7 +1554,7 @@ logger.debug(&amp;quot;Entry number: {} is {}&amp;quot;, i, entry[i]);&lt;/code&
 &lt;p&gt;Now create a new topic with a replication factor of three:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-topics``.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 1 --topic my-replicated-topic&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Okay but now that we have a cluster how can we know which broker is doing what? To see that run the “describe topics” command:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-topics``.sh --describe --zookeeper localhost:2181 --topic my-replicated-topic``Topic:my-replicated-topic   PartitionCount:1    ReplicationFactor:3 Configs:``    ``Topic: my-replicated-topic  Partition: 0    Leader: 1   Replicas: 1,2,0 Isr: 1,2,0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-topics``.sh --describe --zookeeper localhost:2181 --topic my-replicated-topic``Topic:my-replicated-topic   PartitionCount:1    ReplicationFactor:3 Configs:``    ``Topic: my-replicated-topic  Partition: 0    Leader: 1   Replicas: 1undefined2undefined0 Isr: 1undefined2undefined0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Here is an explanation of output. The first line gives a summary of all the partitions, each additional line gives information about one partition. Since we have only one partition for this topic there is only one line.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;“leader” is the node responsible for all reads and writes for the given partition. Each node will be the leader for a randomly selected portion of the partitions.&lt;/li&gt;
@@ -1507,7 +1574,7 @@ logger.debug(&amp;quot;Entry number: {} is {}&amp;quot;, i, entry[i]);&lt;/code&
 &lt;p&gt;On Windows use:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; wmic process where ``&amp;quot;caption = &amp;#39;java.exe&amp;#39; and commandline like &amp;#39;%server-1.properties%&amp;#39;&amp;quot;` `get processid``ProcessId``6016``&amp;gt; taskkill ``/pid` `6016 ``/f&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Leadership has switched to one of the slaves and node 1 is no longer in the in-sync replica set:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-topics``.sh --describe --zookeeper localhost:2181 --topic my-replicated-topic``Topic:my-replicated-topic   PartitionCount:1    ReplicationFactor:3 Configs:``    ``Topic: my-replicated-topic  Partition: 0    Leader: 2   Replicas: 1,2,0 Isr: 2,0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-topics``.sh --describe --zookeeper localhost:2181 --topic my-replicated-topic``Topic:my-replicated-topic   PartitionCount:1    ReplicationFactor:3 Configs:``    ``Topic: my-replicated-topic  Partition: 0    Leader: 2   Replicas: 1undefined2undefined0 Isr: 2undefined0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;But the messages are still available for consumption even though the leader that took the writes originally is down:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-console-consumer``.sh --bootstrap-server localhost:9092 --from-beginning --topic my-replicated-topic``...``my ``test` `message 1``my ``test` `message 2``^C&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;&lt;a href=&quot;https://kafka.apache.org/quickstart#quickstart_kafkaconnect&quot;&gt;Step 7: Use Kafka Connect to import/export data&lt;/a&gt;&lt;/h4&gt;
@@ -1523,7 +1590,7 @@ logger.debug(&amp;quot;Entry number: {} is {}&amp;quot;, i, entry[i]);&lt;/code&
 &lt;p&gt;During startup you’ll see a number of log messages, including some indicating that the connectors are being instantiated. Once the Kafka Connect process has started, the source connector should start reading lines from &lt;code class=&quot;language-text&quot;&gt;test.txt&lt;/code&gt; and producing them to the topic &lt;code class=&quot;language-text&quot;&gt;connect-test&lt;/code&gt;, and the sink connector should start reading messages from the topic &lt;code class=&quot;language-text&quot;&gt;connect-test&lt;/code&gt; and write them to the file &lt;code class=&quot;language-text&quot;&gt;test.sink.txt&lt;/code&gt;. We can verify the data has been delivered through the entire pipeline by examining the contents of the output file:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; ``more` `test``.sink.txt``foo``bar&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Note that the data is being stored in the Kafka topic &lt;code class=&quot;language-text&quot;&gt;connect-test&lt;/code&gt;, so we can also run a console consumer to see the data in the topic (or use custom consumer code to process it):&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-console-consumer``.sh --bootstrap-server localhost:9092 --topic connect-``test` `--from-beginning``{``&amp;quot;schema&amp;quot;``:{``&amp;quot;type&amp;quot;``:``&amp;quot;string&amp;quot;``,``&amp;quot;optional&amp;quot;``:``false``},``&amp;quot;payload&amp;quot;``:``&amp;quot;foo&amp;quot;``}``{``&amp;quot;schema&amp;quot;``:{``&amp;quot;type&amp;quot;``:``&amp;quot;string&amp;quot;``,``&amp;quot;optional&amp;quot;``:``false``},``&amp;quot;payload&amp;quot;``:``&amp;quot;bar&amp;quot;``}``...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; bin``/kafka-console-consumer``.sh --bootstrap-server localhost:9092 --topic connect-``test` `--from-beginning``{``&amp;quot;schema&amp;quot;``:{``&amp;quot;type&amp;quot;``:``&amp;quot;string&amp;quot;``undefined``&amp;quot;optional&amp;quot;``:``false``}undefined``&amp;quot;payload&amp;quot;``:``&amp;quot;foo&amp;quot;``}``{``&amp;quot;schema&amp;quot;``:{``&amp;quot;type&amp;quot;``:``&amp;quot;string&amp;quot;``undefined``&amp;quot;optional&amp;quot;``:``false``}undefined``&amp;quot;payload&amp;quot;``:``&amp;quot;bar&amp;quot;``}``...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The connectors continue to process data, so we can add data to the file and see it move through the pipeline:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;gt; ``echo` `Another line&amp;gt;&amp;gt; ``test``.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You should see the line appear in the console consumer output and in the sink file.&lt;/p&gt;
@@ -1847,7 +1914,7 @@ $ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; systemctl resta
 &lt;p&gt;例如：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;String unitAbbrev = &amp;quot;μs&amp;quot;;                                 | 赞，即使没有注释也非常清晰
 String unitAbbrev = &amp;quot;\u03bcs&amp;quot;; // &amp;quot;μs&amp;quot;                    | 允许，但没有理由要这样做
-String unitAbbrev = &amp;quot;\u03bcs&amp;quot;; // Greek letter mu, &amp;quot;s&amp;quot;    | 允许，但这样做显得笨拙还容易出错
+String unitAbbrev = &amp;quot;\u03bcs&amp;quot;; // Greek letter muundefined &amp;quot;s&amp;quot;    | 允许，但这样做显得笨拙还容易出错
 String unitAbbrev = &amp;quot;\u03bcs&amp;quot;;                            | 很糟，读者根本看不出这是什么
 return &amp;#39;\ufeff&amp;#39; + content; // byte order mark             | Good，对于非打印字符，使用转义，并在必要时写上注释&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;blockquote&gt;
@@ -1895,7 +1962,7 @@ return &amp;#39;\ufeff&amp;#39; + content; // byte order mark             | Good
 &lt;p&gt;&lt;strong&gt;术语说明&lt;/strong&gt;：块状结构(block-like construct)指的是一个类，方法或构造函数的主体。需要注意的是，数组初始化中的初始值可被选择性地视为块状结构(4.8.3.1节)。&lt;/p&gt;
 &lt;h3&gt;4.1 大括号&lt;/h3&gt;
 &lt;h4&gt;4.1.1 使用大括号(即使是可选的)&lt;/h4&gt;
-&lt;p&gt;大括号与&lt;code class=&quot;language-text&quot;&gt;if, else, for, do, while&lt;/code&gt;语句一起使用，即使只有一条语句(或是空)，也应该把大括号写上。&lt;/p&gt;
+&lt;p&gt;大括号与&lt;code class=&quot;language-text&quot;&gt;ifundefined elseundefined forundefined doundefined while&lt;/code&gt;语句一起使用，即使只有一条语句(或是空)，也应该把大括号写上。&lt;/p&gt;
 &lt;h4&gt;4.1.2 非空块：K &amp;#x26; R 风格&lt;/h4&gt;
 &lt;p&gt;对于非空块和块状结构，大括号遵循Kernighan和Ritchie风格 (&lt;a href=&quot;http://www.codinghorror.com/blog/2012/07/new-programming-jargon.html&quot;&gt;Egyptian brackets&lt;/a&gt;):&lt;/p&gt;
 &lt;ul&gt;
@@ -2003,7 +2070,7 @@ return &amp;#39;\ufeff&amp;#39; + content; // byte order mark             | Good
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;private int x; // this is fine
 private Color color; // this too
 
-private int   x;      // permitted, but future edits
+private int   x;      // permittedundefined but future edits
 private Color color;  // may leave it unaligned&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Tip：对齐可增加代码可读性，但它为日后的维护带来问题。考虑未来某个时候，我们需要修改一堆对齐的代码中的一行。 这可能导致原本很漂亮的对齐代码变得错位。很可能它会提示你调整周围代码的空白来使这一堆代码重新水平对齐(比如程序员想保持这种水平对齐的风格)， 这就会让你做许多的无用功，增加了reviewer的工作并且可能导致更多的合并冲突。 &lt;/p&gt;
@@ -2018,29 +2085,29 @@ private Color color;  // may leave it unaligned&lt;/code&gt;&lt;/pre&gt;&lt;/div
 &lt;p&gt;由于枚举类也是一个类，因此所有适用于其它类的格式规则也适用于枚举类。&lt;/p&gt;
 &lt;h4&gt;4.8.2 变量声明&lt;/h4&gt;
 &lt;h5&gt;4.8.2.1 每次只声明一个变量&lt;/h5&gt;
-&lt;p&gt;不要使用组合声明，比如&lt;code class=&quot;language-text&quot;&gt;int a, b;&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;不要使用组合声明，比如&lt;code class=&quot;language-text&quot;&gt;int aundefined b;&lt;/code&gt;。&lt;/p&gt;
 &lt;h5&gt;4.8.2.2 需要时才声明，并尽快进行初始化&lt;/h5&gt;
 &lt;p&gt;不要在一个代码块的开头把局部变量一次性都声明了(这是c语言的做法)，而是在第一次需要使用它时才声明。 局部变量在声明时最好就进行初始化，或者声明后尽快进行初始化。&lt;/p&gt;
 &lt;h4&gt;4.8.3 数组&lt;/h4&gt;
 &lt;h5&gt;4.8.3.1 数组初始化：可写成块状结构&lt;/h5&gt;
 &lt;p&gt;数组初始化可以写成块状结构，比如，下面的写法都是OK的：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;new int[] {
-  0, 1, 2, 3 
+  0undefined 1undefined 2undefined 3 
 }
 
 new int[] {
-  0,
-  1,
-  2,
+  0undefined
+  1undefined
+  2undefined
   3
 }
 
 new int[] {
-  0, 1,
-  2, 3
+  0undefined 1undefined
+  2undefined 3
 }
 
-new int[]{0, 1, 2, 3}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+new int[]{0undefined 1undefined 2undefined 3}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h5&gt;4.8.3.2 非C风格的数组声明&lt;/h5&gt;
 &lt;p&gt;中括号是类型的一部分：&lt;code class=&quot;language-text&quot;&gt;String[] args&lt;/code&gt;， 而非&lt;code class=&quot;language-text&quot;&gt;String args[]&lt;/code&gt;。&lt;/p&gt;
 &lt;h4&gt;4.8.4 switch语句&lt;/h4&gt;
@@ -2049,7 +2116,7 @@ new int[]{0, 1, 2, 3}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;与其它块状结构一致，switch块中的内容缩进为2个空格。&lt;/p&gt;
 &lt;p&gt;每个switch标签后新起一行，再缩进2个空格，写下一条或多条语句。&lt;/p&gt;
 &lt;h5&gt;4.8.4.2 Fall-through：注释&lt;/h5&gt;
-&lt;p&gt;在一个switch块内，每个语句组要么通过&lt;code class=&quot;language-text&quot;&gt;break, continue, return&lt;/code&gt;或抛出异常来终止，要么通过一条注释来说明程序将继续执行到下一个语句组， 任何能表达这个意思的注释都是OK的(典型的是用&lt;code class=&quot;language-text&quot;&gt;// fall through&lt;/code&gt;)。这个特殊的注释并不需要在最后一个语句组(一般是&lt;code class=&quot;language-text&quot;&gt;default&lt;/code&gt;)中出现。示例：&lt;/p&gt;
+&lt;p&gt;在一个switch块内，每个语句组要么通过&lt;code class=&quot;language-text&quot;&gt;breakundefined continueundefined return&lt;/code&gt;或抛出异常来终止，要么通过一条注释来说明程序将继续执行到下一个语句组， 任何能表达这个意思的注释都是OK的(典型的是用&lt;code class=&quot;language-text&quot;&gt;// fall through&lt;/code&gt;)。这个特殊的注释并不需要在最后一个语句组(一般是&lt;code class=&quot;language-text&quot;&gt;default&lt;/code&gt;)中出现。示例：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;switch (input) {
   case 1:
   case 2:
@@ -2107,8 +2174,8 @@ public String getNameIfPresent() { ... }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;每个常量都是一个静态final字段，但不是所有静态final字段都是常量。在决定一个字段是否是一个常量时， 考虑它是否真的感觉像是一个常量。例如，如果任何一个该实例的观测状态是可变的，则它几乎肯定不会是一个常量。 只是永远不&lt;code class=&quot;language-text&quot;&gt;打算&lt;/code&gt;改变对象一般是不够的，它要真的一直不变才能将它示为常量。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Constants
 static final int NUMBER = 5;
-static final ImmutableList&amp;lt;String&amp;gt; NAMES = ImmutableList.of(&amp;quot;Ed&amp;quot;, &amp;quot;Ann&amp;quot;);
-static final Joiner COMMA_JOINER = Joiner.on(&amp;#39;,&amp;#39;);  // because Joiner is immutable
+static final ImmutableList&amp;lt;String&amp;gt; NAMES = ImmutableList.of(&amp;quot;Ed&amp;quot;undefined &amp;quot;Ann&amp;quot;);
+static final Joiner COMMA_JOINER = Joiner.on(&amp;#39;undefined&amp;#39;);  // because Joiner is immutable
 static final SomeMutableType[] EMPTY_ARRAY = {};
 enum SomeEnum { ENUM_CONSTANT }
 
@@ -2118,7 +2185,7 @@ final String nonStatic = &amp;quot;non-static&amp;quot;;
 static final Set&amp;lt;String&amp;gt; mutableCollection = new HashSet&amp;lt;String&amp;gt;();
 static final ImmutableSet&amp;lt;SomeMutableType&amp;gt; mutableElements = ImmutableSet.of(mutable);
 static final Logger logger = Logger.getLogger(MyClass.getName());
-static final String[] nonEmptyArray = {&amp;quot;these&amp;quot;, &amp;quot;can&amp;quot;, &amp;quot;change&amp;quot;};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+static final String[] nonEmptyArray = {&amp;quot;these&amp;quot;undefined &amp;quot;can&amp;quot;undefined &amp;quot;change&amp;quot;};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;这些名字通常是名词或名词短语。&lt;/p&gt;
 &lt;h4&gt;5.2.5 非常量字段名&lt;/h4&gt;
 &lt;p&gt;非常量字段名以&lt;code class=&quot;language-text&quot;&gt;lowerCamelCase&lt;/code&gt;风格编写。&lt;/p&gt;
@@ -2179,7 +2246,7 @@ static final String[] nonEmptyArray = {&amp;quot;these&amp;quot;, &amp;quot;can&
   int i = Integer.parseInt(response);
   return handleNumericResponse(i);
 } catch (NumberFormatException ok) {
-  // it&amp;#39;s not numeric; that&amp;#39;s fine, just continue
+  // it&amp;#39;s not numeric; that&amp;#39;s fineundefined just continue
 }
 return handleTextResponse(response);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;例外&lt;/strong&gt;：在测试中，如果一个捕获的异常被命名为&lt;code class=&quot;language-text&quot;&gt;expected&lt;/code&gt;，则它可以被不加注释地忽略。下面是一种非常常见的情形，用以确保所测试的方法会抛出一个期望中的异常， 因此在这里就没有必要加注释。&lt;/p&gt;
@@ -2206,7 +2273,7 @@ somethingThatYieldsAFoo().aStaticMethod(); // very bad&lt;/code&gt;&lt;/pre&gt;&
 &lt;h4&gt;7.1.1 一般形式&lt;/h4&gt;
 &lt;p&gt;Javadoc块的基本格式如下所示：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/**
- * Multiple lines of Javadoc text are written here,
+ * Multiple lines of Javadoc text are written hereundefined
  * wrapped normally...
  */
 public int method(String p1) { ... }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -2258,7 +2325,7 @@ https://legacy.gitbook.com/book/t3573393/jmockit-tutorial-chinese/details…]]><
 &lt;li&gt;对&lt;code class=&quot;language-text&quot;&gt;table&lt;/code&gt;和&lt;code class=&quot;language-text&quot;&gt;column&lt;/code&gt;使用明确定义的单词并且风格一致的命名。&lt;/li&gt;
 &lt;li&gt;表名使用单数（例如：使用&lt;code class=&quot;language-text&quot;&gt;StudentCourse&lt;/code&gt; 而不是&lt;code class=&quot;language-text&quot;&gt;StudentCourses&lt;/code&gt;），&lt;code class=&quot;language-text&quot;&gt;table&lt;/code&gt;代表着一个实体的集合，不需要用复数命名。&lt;/li&gt;
 &lt;li&gt;表名不要用空格，否则，您将不得不使用&lt;code class=&quot;language-text&quot;&gt;&amp;#39;{&amp;#39;，&amp;#39;[&amp;#39;，&amp;#39;&amp;#39;&amp;#39;&lt;/code&gt;等字符来定义表，访问时还需要用引号&lt;code class=&quot;language-text&quot;&gt;“Student Course”&lt;/code&gt;， 直接用&lt;code class=&quot;language-text&quot;&gt;StudentCourse&lt;/code&gt;会更好。&lt;/li&gt;
-&lt;li&gt;表名不要使用不必要的前缀或者后缀，例如使用&lt;code class=&quot;language-text&quot;&gt;School&lt;/code&gt;而不是&lt;code class=&quot;language-text&quot;&gt;TblSchool, SchoolTable&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;表名不要使用不必要的前缀或者后缀，例如使用&lt;code class=&quot;language-text&quot;&gt;School&lt;/code&gt;而不是&lt;code class=&quot;language-text&quot;&gt;TblSchoolundefined SchoolTable&lt;/code&gt;。&lt;/li&gt;
 &lt;li&gt;保持密码的安全性，需要用的时候在程序里解密&lt;/li&gt;
 &lt;li&gt;所有表使用&lt;code class=&quot;language-text&quot;&gt;integer&lt;/code&gt;类型ID字段。 即使暂时不需要ID，将来也可能会需要，例如关联表，索引等。&lt;/li&gt;
 &lt;li&gt;索引选择&lt;code class=&quot;language-text&quot;&gt;integer&lt;/code&gt;类型的列，&lt;code class=&quot;language-text&quot;&gt;varchar&lt;/code&gt;列索引会引起性能问题。&lt;/li&gt;
@@ -2563,7 +2630,7 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse&lt;/code&gt;&lt
 &lt;p&gt;If you use the Spring Boot Maven or Gradle plugins to create an executable jar, you can run your application using &lt;code class=&quot;language-text&quot;&gt;java -jar&lt;/code&gt;, as shown in the following example:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ java -jar target/myapplication-0.0.1-SNAPSHOT.jar&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;It is also possible to run a packaged application with remote debugging support enabled. Doing so lets you attach a debugger to your packaged application, as shown in the following example:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n \
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ java -Xdebug -Xrunjdwp:server=yundefinedtransport=dt_socketundefinedaddress=8000undefinedsuspend=n \
        -jar target/myapplication-0.0.1-SNAPSHOT.jar&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;19.3 Using the Maven Plugin&lt;/h2&gt;
 &lt;p&gt;The Spring Boot Maven plugin includes a &lt;code class=&quot;language-text&quot;&gt;run&lt;/code&gt; goal that can be used to quickly compile and run your application. Applications run in an exploded form, as they do in your IDE. The following example shows a typical Maven command to run a Spring Boot application:&lt;/p&gt;
@@ -3398,7 +3465,7 @@ o&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ff53e6b3fbb7fa4659de8e0d702a09c4/4db5f/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png&quot;
+    href=&quot;/static/ff53e6b3fbb7fa4659de8e0d702a09c4/de8d7/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3417,13 +3484,13 @@ o&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;线程池的主要处理流程&quot;
         title=&quot;&quot;
-        src=&quot;/static/ff53e6b3fbb7fa4659de8e0d702a09c4/b9e4f/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png&quot;
-        srcset=&quot;/static/ff53e6b3fbb7fa4659de8e0d702a09c4/cf440/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 148w,
-/static/ff53e6b3fbb7fa4659de8e0d702a09c4/d2d38/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 295w,
-/static/ff53e6b3fbb7fa4659de8e0d702a09c4/b9e4f/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 590w,
-/static/ff53e6b3fbb7fa4659de8e0d702a09c4/f9b6a/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 885w,
-/static/ff53e6b3fbb7fa4659de8e0d702a09c4/2d849/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 1180w,
-/static/ff53e6b3fbb7fa4659de8e0d702a09c4/4db5f/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 1188w&quot;
+        src=&quot;/static/ff53e6b3fbb7fa4659de8e0d702a09c4/799d3/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png&quot;
+        srcset=&quot;/static/ff53e6b3fbb7fa4659de8e0d702a09c4/00d96/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 148w,
+/static/ff53e6b3fbb7fa4659de8e0d702a09c4/0b23c/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 295w,
+/static/ff53e6b3fbb7fa4659de8e0d702a09c4/799d3/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 590w,
+/static/ff53e6b3fbb7fa4659de8e0d702a09c4/2a3d6/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 885w,
+/static/ff53e6b3fbb7fa4659de8e0d702a09c4/ae92f/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 1180w,
+/static/ff53e6b3fbb7fa4659de8e0d702a09c4/de8d7/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E4%B8%BB%E8%A6%81%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png 1188w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -3442,7 +3509,7 @@ o&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/fbcdd34bb60a9e164186463e7213a9e5/87985/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png&quot;
+    href=&quot;/static/fbcdd34bb60a9e164186463e7213a9e5/345d0/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3461,13 +3528,13 @@ o&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;thread-pool-executor&quot;
         title=&quot;&quot;
-        src=&quot;/static/fbcdd34bb60a9e164186463e7213a9e5/b9e4f/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png&quot;
-        srcset=&quot;/static/fbcdd34bb60a9e164186463e7213a9e5/cf440/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 148w,
-/static/fbcdd34bb60a9e164186463e7213a9e5/d2d38/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 295w,
-/static/fbcdd34bb60a9e164186463e7213a9e5/b9e4f/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 590w,
-/static/fbcdd34bb60a9e164186463e7213a9e5/f9b6a/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 885w,
-/static/fbcdd34bb60a9e164186463e7213a9e5/2d849/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 1180w,
-/static/fbcdd34bb60a9e164186463e7213a9e5/87985/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 1386w&quot;
+        src=&quot;/static/fbcdd34bb60a9e164186463e7213a9e5/799d3/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png&quot;
+        srcset=&quot;/static/fbcdd34bb60a9e164186463e7213a9e5/00d96/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 148w,
+/static/fbcdd34bb60a9e164186463e7213a9e5/0b23c/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 295w,
+/static/fbcdd34bb60a9e164186463e7213a9e5/799d3/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 590w,
+/static/fbcdd34bb60a9e164186463e7213a9e5/2a3d6/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 885w,
+/static/fbcdd34bb60a9e164186463e7213a9e5/ae92f/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 1180w,
+/static/fbcdd34bb60a9e164186463e7213a9e5/345d0/ThreadPoolExecutor%E6%89%A7%E8%A1%8C%E7%A4%BA%E6%84%8F%E5%9B%BE.png 1386w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -3562,7 +3629,7 @@ https…]]></description><link>http://nocoder.org/jenkins-ci/</link><guid isPerm
 &lt;p&gt;Update your local package index, then finally install Jenkins:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo apt-get update
 sudo apt-get install jenkins
-See Wiki for more information, including notes regarding upgrade from Hudson.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+See Wiki for more informationundefined including notes regarding upgrade from Hudson.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;在ubuntu上安装遇到了以下错误&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;jason@nocoder:/usr/local/java$ sudo apt-get install jenkins
 Reading package lists... Done
@@ -3586,7 +3653,7 @@ jenkins : Depends: default-jre-headless (&amp;gt;= 2:1.8) but 2:1.7-51 is to be 
 apt-get install software-properties-common&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;启动Jenkins报错&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* Starting Jenkins Automation Server jenkins    [fail]
-invoke-rc.d: initscript jenkins, action &amp;quot;start&amp;quot; failed.
+invoke-rc.d: initscript jenkinsundefined action &amp;quot;start&amp;quot; failed.
 dpkg: error processing package jenkins (--configure):
 subprocess installed post-installation script returned error exit status 7
 Processing triggers for ureadahead (0.100.0-16) ...
@@ -4293,7 +4360,7 @@ b的负责人很有耐心的解答着新员工的问题，时而给予表扬，b
 (3)&lt;code class=&quot;language-text&quot;&gt;source ~/.bash&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;折腾完看看版本号
 &lt;code class=&quot;language-text&quot;&gt;rvm -v&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rvm 1.29.3 (latest) by Michal Papisundefined Piotr Kuczynskiundefined Wayne E. Seguin [https://rvm.io]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;装完rvm，就可以更新ruby了&lt;/p&gt;
 &lt;p&gt;可以用&lt;code class=&quot;language-text&quot;&gt;rvm list known&lt;/code&gt;查看一下已发布的版本，我这里安装2.3.4版本&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;rvm install 2.3.4&lt;/code&gt;&lt;/p&gt;
@@ -5153,7 +5220,7 @@ maxWait&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token comment&quot;&gt;//Java 8方式：&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;In Java8, Lambda expression rocks !!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt; 输出&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;too much code, for too little to do
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;too much codeundefined for too little to do
 Lambda expression rocks !!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;这个例子向我们展示了Java 8 lambda表达式的语法。你可以使用lambda写出如下代码：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;params&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; expression
@@ -5162,7 +5229,7 @@ Lambda expression rocks !!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;例如，如果你的方法不对参数进行修改、重写，只是在控制台打印点东西的话，那么可以这样写：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&gt;&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello Lambda Expressions&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;如果你的方法接收两个参数，那么可以写成如下这样：&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(int even, int odd) -&amp;gt; even + odd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(int evenundefined int odd) -&amp;gt; even + odd&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;顺便提一句，通常都会把lambda表达式内部变量的名字起得短一些。这样能使代码更简短，放在同一行。所以，在上述代码中，变量名选用a、b或者x、y会比even、odd要好。&lt;/p&gt;
 &lt;h3&gt;例2、使用Java 8 lambda表达式进行事件处理&lt;/h3&gt;
 &lt;p&gt;如果你用过Swing API编程，你就会记得怎样写事件监听代码。这又是一个旧版本简单匿名类的经典用例，但现在可以不这样了。你可以用lambda表达式写出更好的事件监听代码，如下所示：&lt;/p&gt;
@@ -5176,18 +5243,18 @@ show.addActionListener(new ActionListener() {
 });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Java 8方式：
 show.addActionListener((e) -&amp;gt; {
-    System.out.println(&amp;quot;Light, Camera, Action !! Lambda expressions Rocks&amp;quot;);
+    System.out.println(&amp;quot;Lightundefined Cameraundefined Action !! Lambda expressions Rocks&amp;quot;);
 });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Java开发者经常使用匿名类的另一个地方是为 Collections.sort() 定制 Comparator。在Java 8中，你可以用更可读的lambda表达式换掉丑陋的匿名类。我把这个留做练习，应该不难，可以按照我在使用lambda表达式实现 Runnable 和 ActionListener 的过程中的套路来做。&lt;/p&gt;
 &lt;h3&gt;例3、使用lambda表达式对列表进行迭代&lt;/h3&gt;
 &lt;p&gt;如果你使过几年Java，你就知道针对集合类，最常见的操作就是进行迭代，并将业务逻辑应用于各个元素，例如处理订单、交易和事件的列表。由于Java是命令式语言，Java 8之前的所有循环代码都是顺序的，即可以对其元素进行并行化处理。如果你想做并行过滤，就需要自己写代码，这并不是那么容易。通过引入lambda表达式和默认方法，将做什么和怎么做的问题分开了，这意味着Java集合现在知道怎样做迭代，并可以在API层面对集合元素进行并行处理。下面的例子里，我将介绍如何在使用lambda或不使用lambda表达式的情况下迭代列表。你可以看到列表现在有了一个 forEach()  方法，它可以迭代所有对象，并将你的lambda代码应用在其中。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Java 8之前：
-List features = Arrays.asList(&amp;quot;Lambdas&amp;quot;, &amp;quot;Default Method&amp;quot;, &amp;quot;Stream API&amp;quot;, &amp;quot;Date and Time API&amp;quot;);
+List features = Arrays.asList(&amp;quot;Lambdas&amp;quot;undefined &amp;quot;Default Method&amp;quot;undefined &amp;quot;Stream API&amp;quot;undefined &amp;quot;Date and Time API&amp;quot;);
 for (String feature : features) {
     System.out.println(feature);
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Java 8之后：
-List features = Arrays.asList(&amp;quot;Lambdas&amp;quot;, &amp;quot;Default Method&amp;quot;, &amp;quot;Stream API&amp;quot;, &amp;quot;Date and Time API&amp;quot;);
+List features = Arrays.asList(&amp;quot;Lambdas&amp;quot;undefined &amp;quot;Default Method&amp;quot;undefined &amp;quot;Stream API&amp;quot;undefined &amp;quot;Date and Time API&amp;quot;);
 features.forEach(n -&amp;gt; System.out.println(n));
  
 // 使用Java 8的方法引用更方便，方法引用由::双冒号操作符标示，
@@ -5202,25 +5269,25 @@ Date and Time API&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;例4、使用lambda表达式和函数式接口Predicate&lt;/h3&gt;
 &lt;p&gt;除了在语言层面支持函数式编程风格，Java 8也添加了一个包，叫做 java.util.function。它包含了很多类，用来支持Java的函数式编程。其中一个便是Predicate，使用 java.util.function.Predicate 函数式接口以及lambda表达式，可以向API方法添加逻辑，用更少的代码支持更多的动态行为。下面是Java 8 Predicate 的例子，展示了过滤集合数据的多种常用方法。Predicate接口非常适用于做过滤。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;public static void main(args[]){
-    List languages = Arrays.asList(&amp;quot;Java&amp;quot;, &amp;quot;Scala&amp;quot;, &amp;quot;C++&amp;quot;, &amp;quot;Haskell&amp;quot;, &amp;quot;Lisp&amp;quot;);
+    List languages = Arrays.asList(&amp;quot;Java&amp;quot;undefined &amp;quot;Scala&amp;quot;undefined &amp;quot;C++&amp;quot;undefined &amp;quot;Haskell&amp;quot;undefined &amp;quot;Lisp&amp;quot;);
  
     System.out.println(&amp;quot;Languages which starts with J :&amp;quot;);
-    filter(languages, (str)-&amp;gt;str.startsWith(&amp;quot;J&amp;quot;));
+    filter(languagesundefined (str)-&amp;gt;str.startsWith(&amp;quot;J&amp;quot;));
  
     System.out.println(&amp;quot;Languages which ends with a &amp;quot;);
-    filter(languages, (str)-&amp;gt;str.endsWith(&amp;quot;a&amp;quot;));
+    filter(languagesundefined (str)-&amp;gt;str.endsWith(&amp;quot;a&amp;quot;));
  
     System.out.println(&amp;quot;Print all languages :&amp;quot;);
-    filter(languages, (str)-&amp;gt;true);
+    filter(languagesundefined (str)-&amp;gt;true);
  
     System.out.println(&amp;quot;Print no language : &amp;quot;);
-    filter(languages, (str)-&amp;gt;false);
+    filter(languagesundefined (str)-&amp;gt;false);
  
     System.out.println(&amp;quot;Print language whose length greater than 4:&amp;quot;);
-    filter(languages, (str)-&amp;gt;str.length() &amp;gt; 4);
+    filter(languagesundefined (str)-&amp;gt;str.length() &amp;gt; 4);
 }
  
-public static void filter(List names, Predicate condition) {
+public static void filter(List namesundefined Predicate condition) {
     for(String name: names)  {
         if(condition.test(name)) {
             System.out.println(name + &amp;quot; &amp;quot;);
@@ -5244,7 +5311,7 @@ Print language whose length greater than 4:
 Scala
 Haskell&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 更好的办法
-public static void filter(List names, Predicate condition) {
+public static void filter(List namesundefined Predicate condition) {
     names.stream().filter((name) -&amp;gt; (condition.test(name))).forEach((name) -&amp;gt; {
         System.out.println(name + &amp;quot; &amp;quot;);
     });
@@ -5258,19 +5325,19 @@ Predicate&amp;lt;String&amp;gt; startsWithJ = (n) -&amp;gt; n.startsWith(&amp;qu
 Predicate&amp;lt;String&amp;gt; fourLetterLong = (n) -&amp;gt; n.length() == 4;
 names.stream()
     .filter(startsWithJ.and(fourLetterLong))
-    .forEach((n) -&amp;gt; System.out.print(&amp;quot;nName, which starts with &amp;#39;J&amp;#39; and four letter long is : &amp;quot; + n));&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+    .forEach((n) -&amp;gt; System.out.print(&amp;quot;nNameundefined which starts with &amp;#39;J&amp;#39; and four letter long is : &amp;quot; + n));&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;类似地，也可以使用 or() 和 xor() 方法。本例着重介绍了如下要点：可按需要将 Predicate 作为单独条件然后将其合并起来使用。简而言之，你可以以传统Java命令方式使用 Predicate 接口，也可以充分利用lambda表达式达到事半功倍的效果。&lt;/p&gt;
 &lt;h3&gt;例6、Java 8中使用lambda表达式的Map和Reduce示例&lt;/h3&gt;
 &lt;p&gt;本例介绍最广为人知的函数式编程概念map。它允许你将对象进行转换。例如在本例中，我们将 costBeforeTax 列表的每个元素转换成为税后的值。我们将 x -&gt; x*x lambda表达式传到 map() 方法，后者将其应用到流中的每一个元素。然后用 forEach() 将列表元素打印出来。使用流API的收集器类，可以得到所有含税的开销。有 toList() 这样的方法将 map 或任何其他操作的结果合并起来。由于收集器在流上做终端操作，因此之后便不能重用流了。你甚至可以用流API的 reduce() 方法将所有数字合成一个，下一个例子将会讲到。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 不使用lambda表达式为每个订单加上12%的税
-List costBeforeTax = Arrays.asList(100, 200, 300, 400, 500);
+List costBeforeTax = Arrays.asList(100undefined 200undefined 300undefined 400undefined 500);
 for (Integer cost : costBeforeTax) {
     double price = cost + .12*cost;
     System.out.println(price);
 }
  
 // 使用lambda表达式
-List costBeforeTax = Arrays.asList(100, 200, 300, 400, 500);
+List costBeforeTax = Arrays.asList(100undefined 200undefined 300undefined 400undefined 500);
 costBeforeTax.stream().map((cost) -&amp;gt; cost + .12*cost).forEach(System.out::println);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;112.0
@@ -5287,7 +5354,7 @@ costBeforeTax.stream().map((cost) -&amp;gt; cost + .12*cost).forEach(System.out:
 &lt;p&gt;在上个例子中，可以看到map将集合类（例如列表）元素进行转换的。还有一个 reduce() 函数可以将所有值合并成一个。Map和Reduce操作是函数式编程的核心操作，因为其功能，reduce 又被称为折叠操作。另外，reduce 并不是一个新的操作，你有可能已经在使用它。SQL中类似 sum()、avg() 或者 count() 的聚集函数，实际上就是 reduce 操作，因为它们接收多个值并返回一个值。流API定义的 reduceh() 函数可以接受lambda表达式，并对所有值进行合并。IntStream这样的类有类似 average()、count()、sum() 的内建方法来做 reduce 操作，也有mapToLong()、mapToDouble() 方法来做转换。这并不会限制你，你可以用内建方法，也可以自己定义。在这个Java 8的Map Reduce示例里，我们首先对所有价格应用 12% 的VAT，然后用 reduce() 方法计算总和。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 为每个订单加上12%的税
 // 老方法：
-List costBeforeTax = Arrays.asList(100, 200, 300, 400, 500);
+List costBeforeTax = Arrays.asList(100undefined 200undefined 300undefined 400undefined 500);
 double total = 0;
 for (Integer cost : costBeforeTax) {
     double price = cost + .12*cost;
@@ -5296,8 +5363,8 @@ for (Integer cost : costBeforeTax) {
 System.out.println(&amp;quot;Total : &amp;quot; + total);
  
 // 新方法：
-List costBeforeTax = Arrays.asList(100, 200, 300, 400, 500);
-double bill = costBeforeTax.stream().map((cost) -&amp;gt; cost + .12*cost).reduce((sum, cost) -&amp;gt; sum + cost).get();
+List costBeforeTax = Arrays.asList(100undefined 200undefined 300undefined 400undefined 500);
+double bill = costBeforeTax.stream().map((cost) -&amp;gt; cost + .12*cost).reduce((sumundefined cost) -&amp;gt; sum + cost).get();
 System.out.println(&amp;quot;Total : &amp;quot; + bill);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Total : 1680.0
@@ -5306,30 +5373,30 @@ Total : 1680.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;过滤是Java开发者在大规模集合上的一个常用操作，而现在使用lambda表达式和流API过滤大规模数据集合是惊人的简单。流提供了一个 filter() 方法，接受一个 Predicate 对象，即可以传入一个lambda表达式作为过滤逻辑。下面的例子是用lambda表达式过滤Java集合，将帮助理解。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 创建一个字符串列表，每个字符串长度大于2
 List&amp;lt;String&amp;gt; filtered = strList.stream().filter(x -&amp;gt; x.length()&amp;gt; 2).collect(Collectors.toList());
-System.out.printf(&amp;quot;Original List : %s, filtered list : %s %n&amp;quot;, strList, filtered);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+System.out.printf(&amp;quot;Original List : %sundefined filtered list : %s %n&amp;quot;undefined strListundefined filtered);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Original List : [abc, , bcd, , defg, jk], filtered list : [abc, bcd, defg]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Original List : [abcundefined undefined bcdundefined undefined defgundefined jk]undefined filtered list : [abcundefined bcdundefined defg]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;另外，关于 filter() 方法有个常见误解。在现实生活中，做过滤的时候，通常会丢弃部分，但使用filter()方法则是获得一个新的列表，且其每个元素符合过滤原则。&lt;/p&gt;
 &lt;h3&gt;例8、对列表的每个元素应用函数&lt;/h3&gt;
 &lt;p&gt;我们通常需要对列表的每个元素使用某个函数，例如逐一乘以某个数、除以某个数或者做其它操作。这些操作都很适合用 map() 方法，可以将转换逻辑以lambda表达式的形式放在 map() 方法里，就可以对集合的各个元素进行转换了，如下所示。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 将字符串换成大写并用逗号链接起来
-List&amp;lt;String&amp;gt; G7 = Arrays.asList(&amp;quot;USA&amp;quot;, &amp;quot;Japan&amp;quot;, &amp;quot;France&amp;quot;, &amp;quot;Germany&amp;quot;, &amp;quot;Italy&amp;quot;, &amp;quot;U.K.&amp;quot;,&amp;quot;Canada&amp;quot;);
-String G7Countries = G7.stream().map(x -&amp;gt; x.toUpperCase()).collect(Collectors.joining(&amp;quot;, &amp;quot;));
+List&amp;lt;String&amp;gt; G7 = Arrays.asList(&amp;quot;USA&amp;quot;undefined &amp;quot;Japan&amp;quot;undefined &amp;quot;France&amp;quot;undefined &amp;quot;Germany&amp;quot;undefined &amp;quot;Italy&amp;quot;undefined &amp;quot;U.K.&amp;quot;undefined&amp;quot;Canada&amp;quot;);
+String G7Countries = G7.stream().map(x -&amp;gt; x.toUpperCase()).collect(Collectors.joining(&amp;quot;undefined &amp;quot;));
 System.out.println(G7Countries);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;USA, JAPAN, FRANCE, GERMANY, ITALY, U.K., CANADA&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;USAundefined JAPANundefined FRANCEundefined GERMANYundefined ITALYundefined U.K.undefined CANADA&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;例9、复制不同的值，创建一个子列表&lt;/h3&gt;
 &lt;p&gt;本例展示了如何利用流的 distinct() 方法来对集合进行去重。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 用所有不同的数字创建一个正方形列表
-List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(9, 10, 3, 4, 7, 3, 4);
+List&amp;lt;Integer&amp;gt; numbers = Arrays.asList(9undefined 10undefined 3undefined 4undefined 7undefined 3undefined 4);
 List&amp;lt;Integer&amp;gt; distinct = numbers.stream().map( i -&amp;gt; i*i).distinct().collect(Collectors.toList());
-System.out.printf(&amp;quot;Original List : %s,  Square Without duplicates : %s %n&amp;quot;, numbers, distinct);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+System.out.printf(&amp;quot;Original List : %sundefined  Square Without duplicates : %s %n&amp;quot;undefined numbersundefined distinct);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Original List : [9, 10, 3, 4, 7, 3, 4],  Square Without duplicates : [81, 100, 9, 16, 49]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Original List : [9undefined 10undefined 3undefined 4undefined 7undefined 3undefined 4]undefined  Square Without duplicates : [81undefined 100undefined 9undefined 16undefined 49]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;例10、计算集合元素的最大值、最小值、总和以及平均值&lt;/h3&gt;
 &lt;p&gt;IntStream、LongStream 和 DoubleStream 等流的类中，有个非常有用的方法叫做 summaryStatistics() 。可以返回 IntSummaryStatistics、LongSummaryStatistics 或者 DoubleSummaryStatistic s，描述流中元素的各种摘要数据。在本例中，我们用这个方法来计算列表的最大值和最小值。它也有 getSum() 和 getAverage() 方法来获得列表的所有元素的总和及平均值。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//获取数字的个数、最小值、最大值、总和以及平均值
-List&amp;lt;Integer&amp;gt; primes = Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29);
+List&amp;lt;Integer&amp;gt; primes = Arrays.asList(2undefined 3undefined 5undefined 7undefined 11undefined 13undefined 17undefined 19undefined 23undefined 29);
 IntSummaryStatistics stats = primes.stream().mapToInt((x) -&amp;gt; x).summaryStatistics();
 System.out.println(&amp;quot;Highest prime number in List : &amp;quot; + stats.getMax());
 System.out.println(&amp;quot;Lowest prime number in List : &amp;quot; + stats.getMin());
@@ -5357,12 +5424,12 @@ list.forEach(System.out::println);  // 使用方法引用&lt;/code&gt;&lt;/pre&g
 &lt;p&gt;5）Lambda方法在编译器内部被翻译成私有方法，并派发 invokedynamic 字节码指令来进行调用。可以使用JDK中的 javap 工具来反编译class文件。使用 javap -p 或 javap -c -v 命令来看一看lambda表达式生成的字节码。大致应该长这样：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;private static java.lang.Object lambda$0(java.lang.String);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;6）lambda表达式有个限制，那就是只能引用 final 或 final 局部变量，这就是说不能在lambda内部修改定义在域外的变量。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;List&amp;lt;Integer&amp;gt; primes = Arrays.asList(new Integer[]{2, 3,5,7});
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;List&amp;lt;Integer&amp;gt; primes = Arrays.asList(new Integer[]{2undefined 3undefined5undefined7});
 int factor = 2;
 primes.forEach(element -&amp;gt; { factor++; });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Compile time error : &amp;quot;local variables referenced from a lambda expression must be final or effectively final&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;另外，只是访问它而不作修改是可以的，如下所示：&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;List&amp;lt;Integer&amp;gt; primes = Arrays.asList(new Integer[]{2, 3,5,7});
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;List&amp;lt;Integer&amp;gt; primes = Arrays.asList(new Integer[]{2undefined 3undefined5undefined7});
 int factor = 2;
 primes.forEach(element -&amp;gt; { System.out.println(factor*element); });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;输出：&lt;/p&gt;
@@ -5452,7 +5519,7 @@ primes.forEach(element -&amp;gt; { System.out.println(factor*element); });&lt;/c
   &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; factorial&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;二、计算幂&lt;/h2&gt;
-&lt;p&gt;python的内建函数 &lt;code class=&quot;language-text&quot;&gt;pow(x, n)&lt;/code&gt; 或者 &lt;code class=&quot;language-text&quot;&gt;**&lt;/code&gt; 运算符可以实现幂的计算。&lt;code class=&quot;language-text&quot;&gt;pow(x, n)&lt;/code&gt; 是 &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt; 自乘 &lt;code class=&quot;language-text&quot;&gt;n-1&lt;/code&gt;次，例如&lt;code class=&quot;language-text&quot;&gt;pow(2, 3)&lt;/code&gt;是&lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;乘以自身两次：&lt;code class=&quot;language-text&quot;&gt;2 * 2 * 2 = 8&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;python的内建函数 &lt;code class=&quot;language-text&quot;&gt;pow(xundefined n)&lt;/code&gt; 或者 &lt;code class=&quot;language-text&quot;&gt;**&lt;/code&gt; 运算符可以实现幂的计算。&lt;code class=&quot;language-text&quot;&gt;pow(xundefined n)&lt;/code&gt; 是 &lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt; 自乘 &lt;code class=&quot;language-text&quot;&gt;n-1&lt;/code&gt;次，例如&lt;code class=&quot;language-text&quot;&gt;pow(2undefined 3)&lt;/code&gt;是&lt;code class=&quot;language-text&quot;&gt;2&lt;/code&gt;乘以自身两次：&lt;code class=&quot;language-text&quot;&gt;2 * 2 * 2 = 8&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;使用循环实现&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;power&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
   result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
@@ -5461,8 +5528,8 @@ primes.forEach(element -&amp;gt; { System.out.println(factor*element); });&lt;/c
   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;使用递归实现&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;对于任意数字&lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt;来说，&lt;code class=&quot;language-text&quot;&gt;power(x, 0)&lt;/code&gt;是&lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;；&lt;/li&gt;
-&lt;li&gt;对于任何大于&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;的数来说，&lt;code class=&quot;language-text&quot;&gt;power(x, n)&lt;/code&gt;是&lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt;乘以&lt;code class=&quot;language-text&quot;&gt;(x, n-1)&lt;/code&gt;的结果。&lt;/li&gt;
+&lt;li&gt;对于任意数字&lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt;来说，&lt;code class=&quot;language-text&quot;&gt;power(xundefined 0)&lt;/code&gt;是&lt;code class=&quot;language-text&quot;&gt;1&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;对于任何大于&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;的数来说，&lt;code class=&quot;language-text&quot;&gt;power(xundefined n)&lt;/code&gt;是&lt;code class=&quot;language-text&quot;&gt;x&lt;/code&gt;乘以&lt;code class=&quot;language-text&quot;&gt;(xundefined n-1)&lt;/code&gt;的结果。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;power&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; n &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
@@ -5497,7 +5564,7 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar&lt;/code&gt;&l
 成功则显示如下&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;java version &amp;quot;1.7.0_45&amp;quot;
 Java(TM) SE Runtime Environment (build 1.7.0_45-b18)
-Java HotSpot(TM) 64-Bit Server VM (build 24.45-b08, mixed mode)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[JavaScript基础]]></title><description><![CDATA[维基百科的描述 JavaScript，一种直译式脚本语言，是一种动态类型、基于原型的语言，内置支持类别。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML网页上使用，用来给HTML网页增加动态功能。然而现在JavaScript…]]></description><link>http://nocoder.org/javascript-base-knowleges/</link><guid isPermaLink="false">http://nocoder.org/javascript-base-knowleges/</guid><pubDate>Sat, 08 Apr 2017 05:26:35 GMT</pubDate><content:encoded>&lt;h2&gt;维基百科的描述&lt;/h2&gt;
+Java HotSpot(TM) 64-Bit Server VM (build 24.45-b08undefined mixed mode)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[JavaScript基础]]></title><description><![CDATA[维基百科的描述 JavaScript，一种直译式脚本语言，是一种动态类型、基于原型的语言，内置支持类别。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML网页上使用，用来给HTML网页增加动态功能。然而现在JavaScript…]]></description><link>http://nocoder.org/javascript-base-knowleges/</link><guid isPermaLink="false">http://nocoder.org/javascript-base-knowleges/</guid><pubDate>Sat, 08 Apr 2017 05:26:35 GMT</pubDate><content:encoded>&lt;h2&gt;维基百科的描述&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;JavaScript，一种直译式脚本语言，是一种动态类型、基于原型的语言，内置支持类别。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML网页上使用，用来给HTML网页增加动态功能。然而现在JavaScript也可被用于网络服务器，如Node.js。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -5550,7 +5617,7 @@ JavaScript常用来完成以下任务：&lt;/li&gt;
 你可以将后者作为函数参数（但前者不行）：&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;myFunction(y &amp;gt;= 0 ? y : -y)&lt;/code&gt;
 最后，每当JavaScript期待一个语句，你也可以用一个表达式代替。例如：&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;foo(bar(7, 1));&lt;/code&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;foo(bar(7undefined 1));&lt;/code&gt;
 foo(…)；是一个语句（也叫做表达式语句），bar(7, 1)是一个表达式。他们都实现函数调用。&lt;/p&gt;
 &lt;p&gt;流程控制语句和语句块（Control flow statements and blocks）&lt;/p&gt;
 &lt;p&gt;流程控制语句，其语句体可以是单条语句。举两个例子：&lt;/p&gt;
